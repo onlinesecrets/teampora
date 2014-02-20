@@ -1,4 +1,6 @@
 <html>
+<head><title>Teampora: Kwekkwek Vendor</title>
+	</head>
 
 	<?php include(HEAD_PATH); ?>
 	
