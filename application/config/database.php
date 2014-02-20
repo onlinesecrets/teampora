@@ -45,7 +45,7 @@
 | the active record class
 */
 
-$active_record = TRUE;
+//$active_record = TRUE;
 
 $db['default']['hostname'] = 'tunnel.pagodabox.com';
 $db['default']['username'] = 'berenice';
