@@ -45,8 +45,7 @@
 | the active record class
 */
 
-$active_group = 'default';
-$active_record = TRUE;
+//$active_record = TRUE;
 
 $db['default']['hostname'] = 'tunnel.pagodabox.com';
 $db['default']['username'] = 'berenice';
@@ -65,7 +64,34 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-
+$db['development']['hostname'] = "localhost";
+$db['development']['username'] = "root";
+$db['development']['password'] = "";
+$db['development']['database'] = "teampora";
+$db['development']['dbdriver'] = "mysql";
+$db['development']['dbprefix'] = "";
+$db['development']['pconnect'] = TRUE;
+$db['development']['db_debug'] = TRUE;
+$db['development']['cache_on'] = FALSE;
+$db['development']['cachedir'] = "";
+$db['development']['char_set'] = "utf8";
+$db['development']['dbcollat'] = "utf8_general_ci";
+$db['development']['swap_pre'] = '';
+$db['development']['autoinit'] = TRUE;
+$db['development']['stricton'] = FALSE;
+ 
+// Switch active_group based on environment
+switch (ENVIRONMENT) {
+    case 'default':
+        $active_group = 'default';
+    break;
+ 
+    // add additional cases for more environments
+ 
+    default:
+        $active_group = 'development';
+    break;
+}
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
