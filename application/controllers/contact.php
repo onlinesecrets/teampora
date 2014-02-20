@@ -19,7 +19,7 @@ class Contact extends CI_Controller{
 							'login' => array("Login" , ''),
 							'register' => array("Register" , '')
 		);
-         $data['teamporalogo'] = site_url(IMG_PATH). '/teamporalogo.jpg' ; 
+        // $data['teamporalogo'] = site_url(IMG_PATH). '/teamporalogo.jpg' ; 
 		$this->load->view('contact_view' , $data);
 
 	}
