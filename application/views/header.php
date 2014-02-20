@@ -3,7 +3,7 @@
 		<div id="header-main-upper" >
 			<div id="" class="one-of-two">
 				
-             <img src="<?php echo $teamporalogo; ?>" class="thumbnail" />
+           <h3>Teampora : Mamaligya ug kwekwek sa daplin sa dalan </h3>
 					
 			</div>
 			
