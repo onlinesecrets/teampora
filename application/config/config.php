@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/teampora';
+$config['base_url']	= 'http://teampora.gopagoda.com/';
 
 /*
 |--------------------------------------------------------------------------
