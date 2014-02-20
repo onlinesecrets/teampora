@@ -45,54 +45,27 @@
 | the active record class
 */
 
-//$active_group = 'default';
+$active_group = 'default';
 $active_record = TRUE;
 
-$db['production']['hostname'] = "tunnel.pagodabox.com";
-$db['production']['username'] = "berenice";
-$db['production']['password'] = "6pGK4HLc";
-$db['production']['database'] = "teampora";
-$db['production']['port']  = "3306";
-$db['production']['dbdriver'] = "mysql";
-$db['production']['dbprefix'] = "";
-$db['production']['pconnect'] = TRUE;
-$db['production']['db_debug'] = TRUE;
-$db['production']['cache_on'] = FALSE;
-$db['production']['cachedir'] = "";
-$db['production']['char_set'] = "utf8";
-$db['production']['dbcollat'] = "utf8_general_ci";
-$db['production']['swap_pre'] = '';
-$db['production']['autoinit'] = TRUE;
-$db['production']['stricton'] = FALSE;
+$db['default']['hostname'] = 'tunnel.pagodabox.com';
+$db['default']['username'] = 'berenice';
+$db['default']['password'] = '6pGK4HLc';
+$db['default']['database'] = 'teampora';
+$db['default']['port']  = '3306';
+$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = TRUE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
 
 
-$db['development']['hostname'] = "localhost";
-$db['development']['username'] = "root";
-$db['development']['password'] = "";
-$db['development']['database'] = "teampora";
-$db['development']['dbdriver'] = "mysql";
-$db['development']['dbprefix'] = "";
-$db['development']['pconnect'] = TRUE;
-$db['development']['db_debug'] = TRUE;
-$db['development']['cache_on'] = FALSE;
-$db['development']['cachedir'] = "";
-$db['development']['char_set'] = "utf8";
-$db['development']['dbcollat'] = "utf8_general_ci";
-$db['development']['swap_pre'] = '';
-$db['development']['autoinit'] = TRUE;
-$db['development']['stricton'] = FALSE;
- 
-// Switch active_group based on environment
-switch (ENVIRONMENT) {
-    case 'production':
-        $active_group = 'production';
-    break;
- 
-    // add additional cases for more environments
- 
-    default:
-        $active_group = 'development';
-    break;
-}
+
 /* End of file database.php */
 /* Location: ./application/config/database.php */
