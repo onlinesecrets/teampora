@@ -44,7 +44,7 @@
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
-$active_group = 'default';
+//$active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'tunnel.pagodabox.com';
@@ -64,7 +64,7 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-/*$db['development']['hostname'] = "localhost";
+$db['development']['hostname'] = "localhost";
 $db['development']['username'] = "root";
 $db['development']['password'] = "";
 $db['development']['database'] = "teampora";
@@ -91,7 +91,7 @@ switch (ENVIRONMENT) {
     default:
         $active_group = 'development';
     break;
-}*/
-$active_group = 'default';
+}
+
 /* End of file database.php */
 /* Location: ./application/config/database.php */
