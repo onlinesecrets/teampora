@@ -64,7 +64,7 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-$db['development']['hostname'] = 'localhost';
+/*$db['development']['hostname'] = 'localhost';
 $db['development']['username'] = 'root';
 $db['development']['password'] = '';
 $db['development']['database'] = 'teampora';
@@ -91,6 +91,6 @@ switch (ENVIRONMENT) {
     default:
         $active_group = 'development';
     break;
-}
+}*/
 /* End of file database.php */
 /* Location: ./application/config/database.php */
